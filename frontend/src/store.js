@@ -34,7 +34,7 @@ const userInfoFromStorage = localStorage.getItem('userInfo')
   : null
 
 const shippingAddressFromStorage = localStorage.getItem('shippingAddress')
-  ? JSON.parse(localStorage.getItem('shippingAddress'))
+  ? localStorage.getItem('shippingAddress')
   : {}
 
 const initialState = {
